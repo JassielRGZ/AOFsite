@@ -1,0 +1,212 @@
+*{
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+       
+}
+
+
+
+body {        
+    background-image: url(aofimage.jpg);
+    background-attachment: fixed;
+    background-size: cover;   
+    margin: 0;
+  font-family: Arial, sans-serif;    
+    }
+.gallery{justify-items: stretch;}
+.gallpics{justify-items: stretch;}
+
+.text{display: flex;
+    justify-content: center; margin: 12.5%;
+       color: #ffffff; width: fit-content; border-radius: 25px; font-size: 40px; }
+
+.pic2{display: flex;
+justify-content: center; 
+clip-path: circle();
+margin-top: 110px;
+}
+
+.contactbar{display: flex; justify-content: center;}
+.contactbar ul { display: flex; justify-content: center; color: white ; gap: 60px;}
+.contactbar li a{text-decoration: none; color: #ffffff; padding: 10px; font-size: 1rem;  }
+.contact li a{gap: 8px;}
+
+
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+.nav-links a:hover {
+  background-color: #a61e0f;
+  
+}
+ 
+
+body {
+
+  font-family: Arial, sans-serif;
+
+}
+
+ 
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background-color: #333;
+
+  padding: 10px 20px;
+
+}
+
+ 
+
+.logo  {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 40px;
+
+}
+
+ 
+
+.nav-links {
+
+  list-style: none;
+
+  display: flex; align-items: center;
+
+  justify-content: center;
+
+}
+
+ 
+
+.nav-links li {
+
+  margin-right: 20px;
+
+}
+
+ 
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+}
+
+ 
+
+.burger {
+
+  display: none;
+
+  flex-direction: column;
+
+  cursor: pointer;
+
+}
+
+ 
+
+.line {
+
+  width: 25px;
+
+  height: 3px;
+
+  background-color: white;
+
+  margin: 3px;
+
+}
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+ 
+@media screen and (max-width: 768px) {
+
+  .nav-links {
+
+    display: none;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    position: absolute;
+
+    background-color: #333;
+
+    top: 60px;
+
+    left: 0;
+
+    transition: all 0.5s ease;
+
+  }
+
+  .logo  {
+
+    color: white;
+  
+    text-decoration: none;
+  
+    font-size: 24px;
+  
+  }
+
+  .nav-links.active {
+
+    display: flex;
+
+  }
+
+ 
+
+  .burger {
+
+    display: flex;
+
+  }
+
+  
+
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+  
