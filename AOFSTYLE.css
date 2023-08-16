@@ -192,10 +192,12 @@ body {
 
 .gallery{display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+        border: 3px solid #3498db}
 .gallpics{display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+         border: 3px solid #3498db}
   .burger {
 
     display: flex;
