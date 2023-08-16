@@ -197,7 +197,7 @@ body {
   }
 
  .text{display: flex;
-    justify-content: center; margin: 8.0%;
+    justify-content: center; margin: 3.0%;
        color: #ffffff; width: fit-content; font-size: 20px; }
 
 .gallery{display: flex;
