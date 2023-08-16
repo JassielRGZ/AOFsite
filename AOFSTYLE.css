@@ -192,7 +192,7 @@ body {
   }
 
  .text{display: flex;
-    justify-content: center; margin: 12.5%;
+    justify-content: center; margin: 8.0%;
        color: #ffffff; width: fit-content; font-size: 20px; }
 
 .gallery{display: flex;
