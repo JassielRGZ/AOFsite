@@ -33,8 +33,9 @@ clip-path: circle();
 margin-top: 110px;
 }
 
-.gallpics{display: flex;
-    flex-direction: column;
+.gallpics{ display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
     align-items: center;
     max-width: 100%;
     height: auto;}
