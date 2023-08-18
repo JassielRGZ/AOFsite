@@ -221,6 +221,12 @@ justify-content: center;
 
   }
 
+.burger {
+
+    display: flex;
+
+  }
+
   
 
 }
