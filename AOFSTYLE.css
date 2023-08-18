@@ -31,6 +31,7 @@ body {
 justify-content: center; 
 clip-path: circle();
 margin-top: 110px;
+margin-bottom: 110px;
 }
 
 .gallpics{ display: grid;
@@ -208,14 +209,13 @@ justify-content: center;
 .gallery{display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid #3498db}
+    }
     
 .gallpics{display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    height: auto;
-    border: 3px solid #FFFF00}
+    height: auto;    
   .burger {
 
     display: flex;
