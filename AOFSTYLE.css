@@ -1,10 +1,23 @@
-*{
-    font-family: 'Playfair Display', serif;
-    list-style: none;
-       
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; /* Consistent global font */
+  list-style: none;
 }
 
+/* Body Styling */
+body {
+  background-image: url(aofimage.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Overriding the font for the body */
+  overflow: auto; /* Removed overflow hidden to allow scrolling */
+}
 
+/* Header Styling */
 header {
   position: fixed;
   top: 0;
@@ -12,146 +25,101 @@ header {
   z-index: 1000;
 }
 
-
-body {        
-    background-image: url(aofimage.jpg);
-    background-attachment: fixed;
-    background-size: cover;   
-    margin: 0;
-  font-family: Arial, sans-serif; 
-    overflow: hidden;
-    }
-
-
-.text{display: flex;
-    justify-content: center; margin: 12.5%;
-    color: #ffffff; width: fit-content; border-radius: 25px; font-size: 40px; }
-
-.pic2{display: flex;
-justify-content: center; 
-clip-path: circle();
-margin-top: 110px;
+/* Text Section Styling */
+.text {
+  display: flex;
+  justify-content: center;
+  margin: 12.5%;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 40px;
 }
 
-.gallpics{ display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    align-items: center;
-    max-width: 100%;
-    height: auto;}
-
-.contactbar{display: flex; justify-content: center;}
-.contactbar ul { display: flex; justify-content: center; color: white ; gap: 60px;}
-.contactbar li a{text-decoration: none; color: #ffffff; padding: 10px; font-size: 1rem;  }
-.contact li a{gap: 8px;}
-
-
-
-
-
-* {
-
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
-
+/* Circular Image Styling */
+.pic2 {
+  display: flex;
+  justify-content: center;
+  clip-path: circle();
+  margin-top: 110px;
 }
+
+/* Gallery Grid Styling */
+.gallpics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Contact Bar Styling */
+.contactbar {
+  display: flex;
+  justify-content: center;
+}
+
+.contactbar ul {
+  display: flex;
+  gap: 60px;
+}
+
+.contactbar li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Navbar Styling */
 .nav-links a:hover {
-  background-color: #a61e0f; 
-  font-size: 28px
-  
+  background-color: #a61e0f;
+  padding: 5px; /* Removed font-size change on hover to avoid layout shift */
+  transition: background-color 0.3s ease;
 }
- 
-
- 
 
 .navbar {
-
   display: flex;
-    
   justify-content: space-between;
-
   align-items: center;
-
   background-color: #333;
-
   padding: 10px 20px;
-
 }
 
- 
-
-.logo  {
-
+.logo {
   color: white;
-
   text-decoration: none;
-
   font-size: 40px;
-
 }
-
- 
 
 .nav-links {
-
-  list-style: none;
-
-  display: flex; align-items: center;
-
-justify-content: center;
- font-size: 28px
-  
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
 }
-
- 
 
 .nav-links li {
-
   margin-right: 20px;
-
 }
-
- 
 
 .nav-links a {
-
   color: white;
-
   text-decoration: none;
-
 }
 
- 
-
+/* Burger Menu */
 .burger {
-
   display: none;
-
   flex-direction: column;
-
   cursor: pointer;
-
 }
-
- 
 
 .line {
-
   width: 25px;
-
   height: 3px;
-
   background-color: white;
-
   margin: 3px;
-
 }
-
 
 .bar {
   width: 25px;
@@ -160,80 +128,48 @@ justify-content: center;
   margin: 5px 0;
 }
 
- 
+/* Responsive Styling for Smaller Screens */
 @media screen and (max-width: 768px) {
-
   .nav-links {
-
     display: none;
-
     flex-direction: column;
-
     width: 100%;
-
     position: absolute;
-
     background-color: #333;
-
     top: 60px;
-
     left: 0;
-
     transition: all 0.5s ease;
-      
-    font-size: 28px
-
+    font-size: 20px; /* Reduced font-size for smaller screens */
   }
 
-  .logo  {
-
-    color: white;
-  
-    text-decoration: none;
-  
+  .logo {
     font-size: 24px;
-  
   }
 
   .nav-links.active {
-
     display: flex;
-
   }
 
- .text{display: flex;
-    justify-content: center; margin: 12.5%;
-       color: #ffffff; width: fit-content; font-size: 20px; }
+  .text {
+    font-size: 20px;
+  }
 
-.gallery{display: flex;
+  .gallery,
+  .gallpics {
     flex-direction: column;
     align-items: center;
-    }
-    
-.gallpics{display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    height: auto;}  
+  }
+
   .burger {
-
     display: flex;
-
   }
-
-
-  
-
 }
-
 
 /* Footer Styles */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
-  
+  padding: 20px 0; /* Added padding for spacing */
+  font-size: 16px;
 }
-
-
-  
