@@ -128,24 +128,18 @@ header {
   margin: 5px 0;
 }
 
-/* Responsive Styling for Smaller Screens */
 @media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .gallpics {
+    grid-template-columns: 1fr; /* Stacks images in a single column on smaller screens */
+    gap: 20px; /* Optional: reduce the gap for better spacing on mobile */
+  }
+
+  .gallery {
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    position: absolute;
-    background-color: #333;
-    top: 60px;
-    left: 0;
-    transition: all 0.5s ease;
-    font-size: 20px; /* Reduced font-size for smaller screens */
+    align-items: center;
   }
-
-  .logo {
-    font-size: 24px;
-  }
-
+}
   .nav-links.active {
     display: flex;
   }
