@@ -41,11 +41,18 @@ header {
 .gallpics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  gap: 20px;
   align-items: center;
   max-width: 100%;
-}
+  padding: 0 20px; /*
+  }
 
+
+  .gallpics img {
+  max-width: 100%; /* Ensures images don't exceed their container width */
+  height: auto;    /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners for a more modern look */
+}
 .contactbar {
   display: flex;
   justify-content: center;
