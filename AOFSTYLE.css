@@ -105,13 +105,21 @@ header {
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: 0;
     background-color: #333;
     width: 100%;
+    padding: 10px 0; /* Add padding to the top and bottom */
+    align-items: center; /* Center-aligns text within the dropdown */
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center; /* Center-aligns each link */
+    padding: 10px 0; /* Space each link vertically */
   }
 
   .burger {
