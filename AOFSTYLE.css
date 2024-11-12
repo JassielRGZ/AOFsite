@@ -70,6 +70,23 @@ header {
   font-size: 1rem;
 }
 
+/* Add heartbeat animation for the contact bar list items */
+.contactbar li a:hover {
+  animation: heartbeat 1s ease-in-out infinite;
+  color: #ff0000; /* Change this color to your preferred hover color */
+}
+
+/* Define the heartbeat animation */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
